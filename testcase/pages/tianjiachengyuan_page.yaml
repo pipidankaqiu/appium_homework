@@ -1,0 +1,34 @@
+- by: xpath
+  locator: //*[@text='手动输入添加']
+  action: find_ele_click
+
+- by: xpath
+  locator: //*[@text='必填']
+  action: find_ele_sendkey
+  text: 测试5
+
+- by: xpath
+  locator: //*[@resource-id='com.tencent.wework:id/err']//*[@resource-id='com.tencent.wework:id/bgk']//*[@resource-id='com.tencent.wework:id/b7m']
+  action: find_ele_sendkey
+  text: 0000005
+
+- by: id
+  locator: com.tencent.wework:id/eso
+  action: find_ele_click
+
+- by: id
+  locator: com.tencent.wework:id/bp8
+  action: wait_ele_click
+
+- by: xpath
+  locator: //*[@resource-id='com.tencent.wework:id/en5'and@text='女']
+  action: find_ele_click
+
+- by: id
+  locator: com.tencent.wework:id/fwi
+  action: find_ele_sendkey
+  text: 13155555555
+
+- by: id
+  locator: com.tencent.wework:id/aj_
+  action: find_ele_click
